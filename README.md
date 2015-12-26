@@ -4,7 +4,7 @@ Built off of the idea of EazySubs, a better scipt was built in 2011, at the age 
 
 A couple hundred scripts were sold at around $100 each, based on the number of plugins the user selected.
 
-![Preview]({{site.baseurl}}//preview.jpg)
+![Preview](preview.jpg)
 
 ## Marketed Description
 
