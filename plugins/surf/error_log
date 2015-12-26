@@ -1,0 +1,4 @@
+[29-Feb-2012 04:09:48] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'socialme'@'localhost' (using password: NO) in /home/socialme/public_html/plugins/surf/index.php on line 2
+[29-Feb-2012 04:09:49] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/socialme/public_html/plugins/surf/index.php on line 2
+[29-Feb-2012 04:09:49] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/socialme/public_html/plugins/surf/index.php on line 2
+[29-Feb-2012 04:09:49] PHP Fatal error:  Call to undefined function  executesql() in /home/socialme/public_html/plugins/surf/index.php on line 4
