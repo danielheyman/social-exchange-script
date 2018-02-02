@@ -1,8 +1,6 @@
 ## Social Exchange Script
 
-Built off of the idea of [EazySubs](https://github.com/danielheyman/EazySubs), a better scipt was built in 2011, at the age of 15, under Tectrify, to provide users with a chance to open their own exchange website. Using plugins, users would be able to buy the social media packages they wanted.
-
-A couple hundred scripts were sold at around $100 each, based on the number of plugins the user selected.
+Built off of the idea of [EazySubs](https://github.com/danielheyman/EazySubs), in 2011 under Tectrify LLC, to provide users with a chance to open their own exchange website. Using plugins, users would be able to buy the social media packages they wanted.
 
 ![Preview](preview.jpg)
 
