@@ -88,5 +88,5 @@ Gain <? echo $site2->cpc - 1;?> coins in <font id="seconds"><?php echo $site->su
 </div>
 <iframe src="<? echo $site2->url;?>"></iframe>
 <?php
-}else{ echo ' Tut uns leid: Es sind keine Coins mehr vorhanden! Bitte versuchen sie es in ein paar Minuten erneut! <a href="index.php">Go Back</a>'; } ?>
+}else{ echo ' Sorry, there are no coins left! Please try again in a few minutes! <a href="index.php">Go Back</a>'; } ?>
     

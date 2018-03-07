@@ -2,11 +2,11 @@
 $num1 = mysql_query("SELECT * FROM `facebook` WHERE `url`='{$posts['url']}'");
 $num = mysql_num_rows($num1);
 if($num > 0){
-    $error = "Seite bereits vorhanden!";
+    $error = "Page already exists!";
 }else if(!strstr($posts['url'], 'facebook.com')) {
-    $error = "Falsche URL! URL muss 'facebook.com' enthalten!";
+    $error = "Wrong URL! URL must contain 'facebook.com'!";
 }else{
     mysql_query("INSERT INTO `facebook` (user, url, title, cpc) VALUES('{$data->id}', '{$posts['url']}', '{$posts['title']}', '{$posts['cpc']}') ");
-    $success = "Seite erfolgreich erstellt!";
+    $success = "Page successfully created!";
 }
 ?>

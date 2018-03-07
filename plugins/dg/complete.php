@@ -25,9 +25,9 @@ $plused1 = mysql_query("SELECT * FROM `dugg` WHERE `site_id`='{$posts['him']}' A
 $plused  = mysql_num_rows($plused1);
 $x = $data3->digg;
 if ($page == FALSE) { 
-    echo "Error: Keine Verbindung zu Digg! Bitte versuchen sie es sp‰ter!";
+    echo "Error: No connection to Digg! Please try later!";
 }else if($plused > 0){
-    echo "Error: Sie haben diesen Benutzer bereits geDiggt!";
+    echo "Error: You have already signed this user!";
 }else if (preg_match("/$x/i", $page)) {
 $coins = number_format($site2->cpc - 1);
 $bonuscoins = hook_filter('bonus_coins',$coins);
@@ -43,9 +43,9 @@ if($aff->ref > 0){
 $coins = $coins * $site->refbonus;
 mysql_query("UPDATE `users` SET `coins`=`coins`+'$coins' WHERE `id`='{$aff->ref}'");
 }
-    echo "Sie haben den Digg abgeschlossen.Sie erhalten {$coins} Coins!";
+    echo "You have completed the Digg. You will receive {$coins} coins!";
 }else{
-    echo "ERROR: Digg meldet: Sie haben den Digg nicht abgeschlossen. Bitte schlieﬂen sie den Digg erst ab!";
+    echo "ERROR: You have not completed the Digg. Please close the Digg first!";
 }
 }
 }

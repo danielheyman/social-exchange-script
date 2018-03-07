@@ -4,6 +4,10 @@ Built off of the idea of [EazySubs](https://github.com/danielheyman/EazySubs), i
 
 ![Preview](preview.jpg)
 
+## Requirements
+
+- PHP version 5.5 or older
+
 ## Marketed Description
 
 SocialExchangeScript is an exchange system that is very user friendly for both the user and the owner. As an owner, all you have to do is drag and drop plugins into a folder and adminster through an amazing administration panel. 

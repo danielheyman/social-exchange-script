@@ -70,7 +70,7 @@
                     <?php 
                 } 
             ?></div><input onclick='refreshpage();' class="refresh" type='button' value='Refresh'><?php
-        }else{ echo '<div class="error">ERROR: Sorry kein content mehr.</div>'; }
-        }else{ echo '<div class="error">ERROR: <a href="settings.php">Bitte Twitter Account unter einstellungen eingeben!</a></div>'; }?>
+        }else{ echo '<div class="error">ERROR: Sorry, there are no coins left! Please try again in a few minutes!.</div>'; }
+        }else{ echo '<div class="error">ERROR: <a href="settings.php">Please enter Twitter Account under Settings!</a></div>'; }?>
     </div>
 </div>

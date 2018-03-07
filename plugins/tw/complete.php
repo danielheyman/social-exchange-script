@@ -25,9 +25,9 @@ $json_a = json_decode($page,true);
 $plused1 = mysql_query("SELECT * FROM `followed` WHERE `site_id`='{$posts['him']}' AND `user_id`='{$posts['me']}'");
 $plused  = mysql_num_rows($plused1);
 if ($page == FALSE) { 
-    echo "Error: Wir können keine Follower bestätigen!";
+    echo "Error: We can not confirm the follow!";
 }else if($plused > 0){
-echo "Error: Sie haben bereits gefollowed @".$id."!";
+echo "Error: You have already followed @".$id."!";
 }else if (strpos($page, "true") !== FALSE) {
 $coins = number_format($site2->cpc - 1);
 $bonuscoins = hook_filter('bonus_coins',$coins);
@@ -44,9 +44,9 @@ $coins = $coins * $site->refbonus;
 mysql_query("UPDATE `users` SET `coins`=`coins`+'$coins' WHERE `id`='{$aff->ref}'");
 }
 
-echo "Sie haben gefollowed @".$id."! Sie erhalten {$coins} Coins!";
+echo "SUCCESS: Follow successfully! You receive {$coins} coins!";
 }else{
-echo "Twitter meldet: Sie haben noch nicht gefollowed @".$id."! Versuchen sie es erneut wenn sie sich eingeloggt haben" . $data3->twitter . ;
+echo "Twitter says: You have not yet followed @" . $id . "! Please try again when logged in" . $data3->twitter;
 }
 }
 }

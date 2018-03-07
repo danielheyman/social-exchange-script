@@ -90,6 +90,6 @@
                     <?php 
                 } 
             ?></div><input onclick='refreshpage();' class="refresh" type='button' value='Refresh'><?php
-        }else{ echo '<div class="error">ERROR: Tut uns leid: Es sind keine Coins mehr vorhanden! Bitte versuchen sie es in ein paar Minuten erneut!</div>'; } ?>
+        }else{ echo '<div class="error">ERROR: Sorry, there are no coins left! Please try again in a few minutes!</div>'; } ?>
     </div>
 </div>

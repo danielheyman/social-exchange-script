@@ -10,7 +10,7 @@ foreach($_POST as $key => $value) {
 if(isset($posts['me'])){
 if(isset($_GET['step']) && $_GET['step'] == "skip"){
 mysql_query("INSERT INTO `linked` (user_id, site_id) VALUES('{$posts['me']}', '{$posts['him']}')");
-echo "Erfolgreich!";
+echo "Successful!";
 }else{
 $dbres1	= mysql_query("SELECT * FROM `users` WHERE `id`='{$posts['me']}'");
 $data3 = mysql_fetch_object($dbres1);
@@ -19,7 +19,7 @@ $site2 = mysql_fetch_object(mysql_query("SELECT * FROM `linkedin` WHERE `id`='{$
 $plused1 = mysql_query("SELECT * FROM `linked` WHERE `site_id`='{$posts['him']}' AND `user_id`='{$posts['me']}'");
 $plused  = mysql_num_rows($plused1);
 if($plused > 0){
-echo "Error: Sie haben diese Website bereits geteilt!";
+echo "Error: You have already shared this website!";
 }else{
 $coins = number_format($site2->cpc - 1);
 $bonuscoins = hook_filter('bonus_coins',$coins);
@@ -36,7 +36,7 @@ $coins = $coins * $site->refbonus;
 mysql_query("UPDATE `users` SET `coins`=`coins`+'$coins' WHERE `id`='{$aff->ref}'");
 }
 
-echo "Sie haben erfolgreich geteilt und erhalten {$coins} Coins!";
+echo "You have successfully shared and received {$coins} coins!";
 }
 }
 }

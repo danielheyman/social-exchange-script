@@ -34,14 +34,14 @@ $coins = $coins * $site->refbonus;
 mysql_query("UPDATE `users` SET `coins`=`coins`+'$coins' WHERE `id`='{$aff->ref}'");
 }
 
-echo "SUCCESS: Follow erfolgreich! Sie erhalten {$coins} Coins!";
+echo "SUCCESS: Follow successfully! You receive {$coins} coins!";
 }else{
-echo "Error: Sie haben den User bereits 'gefollowed'!";
+echo "Error: You have already 'followed' the user!";
 }
 }
 else
 {
-echo "ERROR: Stumbleupon meldet: Sie haben diesen user nicht 'gefollowed' ! Versuchen sie den user zu entfollowen und versuchen sie es dann erneut!";
+echo "ERROR: You have not 'followed' this user! Try to unfollow the user and then try again!";
 }
 }
 }
